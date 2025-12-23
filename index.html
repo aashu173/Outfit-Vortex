@@ -1,207 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Outfit Vortex | Jaipur Kurtis</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <title>BrightClean Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#f9f9f9; }
+    header { background:#0a5cff; color:#fff; padding:60px 20px; text-align:center; }
+    section { padding:40px 20px; max-width:1000px; margin:auto; }
+    .services div { background:#fff; padding:20px; margin:10px 0; border-radius:8px; }
+    footer { background:#111; color:#fff; text-align:center; padding:20px; }
+    button { background:#0a5cff; color:#fff; padding:12px 20px; border:none; border-radius:5px; }
+  </style>
 </head>
 <body>
-  <!-- Page Wrapper -->
-  <div class="page-wrapper">
 
-    <!-- Floating Gradient Background -->
-    <div class="bg-glow bg-glow-1"></div>
-    <div class="bg-glow bg-glow-2"></div>
+<header>
+  <h1>BrightClean Services</h1>
+  <p>Professional Home & Office Cleaning</p>
+  <button>Get Free Quote</button>
+</header>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-      <div class="nav-left">
-        <div class="logo-circle">OV</div>
-        <div class="brand">
-          <span class="brand-title">Outfit Vortex</span>
-          <span class="brand-sub">Jaipur Kurti Studio</span>
-        </div>
-      </div>
-      <nav class="nav-links">
-        <a href="#hero">Home</a>
-        <a href="#collection">Collection</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="nav-right">
-        <button class="icon-btn">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-        <button class="icon-btn">
-          <i class="fa-regular fa-heart"></i>
-        </button>
-        <button class="icon-btn">
-          <i class="fa-solid fa-bag-shopping"></i>
-          <span class="cart-count" id="cart-count">0</span>
-        </button>
-      </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="hero" id="hero">
-      <div class="hero-left">
-        <p class="eyebrow">Made in Jaipur • Handpicked kurtis</p>
-        <h1 class="hero-title">
-          Spin into style with<br />
-          <span>Outfit Vortex</span>
-        </h1>
-        <p class="hero-subtitle">
-          Discover premium <strong>Jaipuri printed kurtis</strong> crafted with love,
-          comfort and everyday elegance. Perfect for college, office and festive vibes.
-        </p>
-        <div class="hero-actions">
-          <button class="btn-primary" id="shop-now-btn">
-            Shop Jaipur Kurtis <i class="fa-solid fa-arrow-right"></i>
-          </button>
-          <button class="btn-ghost">
-            View Festive Edit
-          </button>
-        </div>
-        <div class="hero-meta">
-          <div>
-            <span class="meta-big">100%</span>
-            <span class="meta-small">Jaipur Made</span>
-          </div>
-          <div>
-            <span class="meta-big">3–7</span>
-            <span class="meta-small">Day Delivery</span>
-          </div>
-          <div>
-            <span class="meta-big">COD</span>
-            <span class="meta-small">Available</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <div class="hero-card float-card">
-          <div class="tag-pill">New • Jaipuri Cotton</div>
-          <div class="hero-model"></div>
-          <div class="hero-info">
-            <div>
-              <h3>Pink Block Print Kurti</h3>
-              <p>Soft cotton • Daily wear</p>
-            </div>
-            <div class="hero-price">
-              <span class="price-main">₹799</span>
-              <span class="price-cut">₹1299</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="scroll-hint">
-          <span>Drag to explore</span>
-          <div class="scroll-dots">
-            <span></span><span></span><span></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DRAGGABLE FEATURED STRIP -->
-    <section class="strip-section">
-      <h2 class="section-title">
-        Featured <span>Kurtis</span>
-      </h2>
-      <p class="section-subtitle">
-        Drag left / right to explore trending Outfits from Jaipur.
-      </p>
-
-      <div class="drag-wrapper" id="drag-wrapper">
-        <div class="product-row" id="featured-row">
-          <!-- JS will inject product cards here -->
-        </div>
-      </div>
-    </section>
-
-    <!-- COLLECTION GRID -->
-    <section class="collection" id="collection">
-      <div class="section-header">
-        <h2 class="section-title">Shop the <span>Collection</span></h2>
-        <div class="filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="casual">Casual</button>
-          <button class="filter-btn" data-filter="office">Office</button>
-          <button class="filter-btn" data-filter="festive">Festive</button>
-        </div>
-      </div>
-
-      <div class="product-grid" id="product-grid">
-        <!-- JS will inject full product list here -->
-      </div>
-    </section>
-
-    <!-- ABOUT JAIPUR CRAFT -->
-    <section class="about" id="about">
-      <div class="about-left">
-        <h2>Born in Jaipur,<br>designed for <span>everyday queens</span>.</h2>
-        <p>
-          Outfit Vortex brings you <strong>locally crafted kurtis</strong> straight from
-          Jaipur’s famous markets – Sanganer, Johri Bazaar and more. Each piece is
-          handpicked to give you:
-        </p>
-        <ul class="about-list">
-          <li><i class="fa-solid fa-circle-check"></i> Premium cotton & rayon fabric</li>
-          <li><i class="fa-solid fa-circle-check"></i> Breathable for Indian weather</li>
-          <li><i class="fa-solid fa-circle-check"></i> Modern fits with traditional prints</li>
-          <li><i class="fa-solid fa-circle-check"></i> Budget friendly – direct from maker</li>
-        </ul>
-      </div>
-      <div class="about-right">
-        <div class="about-card">
-          <span class="about-label">Jaipur Special</span>
-          <h3>Handblock Print Set</h3>
-          <p>Perfect for festive + office look. Pair with oxidised jewellery and juttis. 💫</p>
-          <div class="about-meta-row">
-            <div>
-              <span class="meta-big">4.8</span>
-              <span class="meta-small"><i class="fa-solid fa-star"></i> Rating</span>
-            </div>
-            <div>
-              <span class="meta-big">500+</span>
-              <span class="meta-small">Happy Customers</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT / WHATSAPP CTA -->
-    <section class="contact" id="contact">
-      <div class="contact-card">
-        <h2>Want to order directly from Jaipur?</h2>
-        <p>
-          DM us on WhatsApp for size help, custom colours and bulk orders.
-        </p>
-        <div class="contact-actions">
-          <a href="https://wa.me/910000000000" target="_blank" class="btn-whatsapp">
-            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
-          </a>
-          <span class="contact-note">You can update this number in HTML.</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- TOAST -->
-    <div class="toast" id="toast">Added to bag 🛍️</div>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <span>© <span id="year"></span> Outfit Vortex • Jaipur Made with ❤️</span>
-      <span>Designed & managed by you in VS Code</span>
-    </footer>
+<section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div>Home Cleaning</div>
+    <div>Office Cleaning</div>
+    <div>Deep Cleaning</div>
   </div>
+</section>
 
-  <script src="script.js"></script>
+<section>
+  <h2>Why Choose Us?</h2>
+  <p>Trusted by 500+ happy clients. Affordable & reliable service.</p>
+</section>
+
+<section>
+  <h2>Contact Us</h2>
+  <p>Email: contact@brightclean.com</p>
+  <p>Phone: +1 234 567 890</p>
+</section>
+
+<footer>
+  © 2025 BrightClean Services
+</footer>
+
 </body>
 </html>
